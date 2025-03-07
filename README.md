@@ -84,37 +84,51 @@ dlib 是一個開源庫，這意味著它可以免費使用並且可修改。
 # 2. py Code
 ## 2-1. Input FacePicture to facedb folder
   1.請準備您想辨識的人臉照片，注意:圖片內僅能1個人，正面，臉孔清晰
-    Please prepare the photo of the face you want to recognize. Note: The image should contain only one person, be taken from the front, and the face should be clear.
+  
+  Please prepare the photo of the face you want to recognize. Note: The image should contain only one person, be taken from the front, and the face should be clear.
+  
   
   1-1.圖片格式最好使用 jpeg
-    It is recommended to use the JPEG image format.
+  
+  It is recommended to use the JPEG image format.
         
   ![image](https://github.com/user-attachments/assets/6f5ee9ef-8bb5-4539-ae15-595bcc9c4f70)
   
  2.請使用 VSCode 或您的開發工具開啟 FaceRecognition.py
-   Please open FaceRecognition.py with VSCode or any development tool.
+
+ Please open FaceRecognition.py with VSCode or any development tool.
+ 
 
 3.程式核心原理
   3-1.會將 facedb 資料夾內的圖片，檢測出人臉特徵並依序存入陣列內並用圖片檔名作為人名。
-      It will detect the facial features of the images in the 'facedb' folder, store them sequentially in an array, and use the image filenames as the names.
+      
+  It will detect the facial features of the images in the 'facedb' folder, store them sequentially in an array, and use the image filenames as the names.
+  
       
   3-2.開啟鏡頭，並將鏡頭上的畫面執行檢測人臉是否符合陣列內人臉特徵內的人物，若有變繪製文字呈現名稱；反之便顯示未知名稱。
-      Turn on the camera and perform face detection on the live feed to check if the face matches any person in the array of facial features. If a match is found, display the name; otherwise, display 'Unknown'.
+      
+  Turn on the camera and perform face detection on the live feed to check if the face matches any person in the array of facial features. If a match is found, display the name; otherwise, display 'Unknown'.
+  
 
   3-3.在視訊鏡頭畫面，按下 "ESC" 會退出程式；按下 "1" 會將視訊畫面截圖儲存至 data 資料夾。
-      In the video feed, press 'ESC' to exit the program; press '1' to capture and save a screenshot of the video to the 'data' folder.
+  
+  In the video feed, press 'ESC' to exit the program; press '1' to capture and save a screenshot of the video to the 'data' folder.
       
-![image](https://github.com/user-attachments/assets/d783fc41-b0bf-4965-b161-40a6760c4b63)
+![image](https://github.com/user-attachments/assets/17b3a2a1-5108-4c2c-ba5a-d5934b24d2c7)
+
 
   3-4.請參考以下識別結果:
-    Please refer the recognition result as below.
-![image](https://github.com/user-attachments/assets/c7672faf-aeea-45d1-b585-31c6d9f7b29a)
+  
+  Please refer the recognition result as below.
+  
+![image](https://github.com/user-attachments/assets/2f12d504-5c41-4112-befa-746ecc7d03b7)
 
 ![image](https://github.com/user-attachments/assets/019f4a06-4e1a-47a6-8215-e705eaa74ce1)
 
 ------
 
 # 3. Note
+
 ```diff
 ! 本程式所使用的女生模特兒皆為我使用SD繪製出來的虛擬人物。
 ! The girl models used in this program are all virtual characters created by me using SD (Stable Diffusion).
